@@ -49,7 +49,7 @@ export const books: Book[] = [
     title: "شازده کوچولو",
     author: "آنتوان دو سنت‌اگزوپری",
     category: "ادبیات و داستان",
-    cover: null,
+    cover: "/images/books/little-prince.jpg",
     description:
       "داستانی زیبا درباره سفر یک شاهزاده کوچک و آشنایی با شخصیت‌های مختلف؛ کتابی درباره دوستی، عشق و ارزش‌های انسانی.",
   },
