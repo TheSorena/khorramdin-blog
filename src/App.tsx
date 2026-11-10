@@ -3,9 +3,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
-import Products from "./pages/Products";
+import Post from "./pages/Post";
+import Archive from "./pages/Archive";
 import About from "./pages/About";
-import HowToOrder from "./pages/HowToOrder";
 import Contact from "./pages/Contact";
 
 export default function App() {
@@ -17,9 +17,9 @@ export default function App() {
         <main className="flex-1 pt-16">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/posts" element={<Archive />} />
+            <Route path="/post/:slug" element={<Post />} />
             <Route path="/about" element={<About />} />
-            <Route path="/how-to-order" element={<HowToOrder />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

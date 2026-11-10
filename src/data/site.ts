@@ -2,13 +2,16 @@ export const site = {
   name: "خرمدین",
   latinName: "KHORRAMDIN",
   tagline: "دریچه‌ای به دنیای کتاب و اندیشه",
+  blogTitle: "خرمدین | نشر کتاب و اندیشه",
+  welcome:
+    "به وبلاگ خرمدین خوش آمدید! خرمدین با هدف معرفی، ترجمه و عرضه کتاب‌های ارزشمند از سراسر جهان فعالیت می‌کند.",
 };
 
 export const navLinks = [
   { to: "/", label: "صفحه اصلی" },
-  { to: "/products", label: "محصولات" },
+  { to: "/post/products", label: "محصولات" },
   { to: "/about", label: "درباره ما" },
-  { to: "/how-to-order", label: "نحوه سفارش" },
+  { to: "/post/how-to-order", label: "نحوه سفارش" },
   { to: "/contact", label: "تماس با ما" },
 ];
 
