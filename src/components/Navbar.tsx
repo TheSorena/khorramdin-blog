@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { BookOpen, Menu, Search, X } from "lucide-react";
+import { Menu, Search, X } from "lucide-react";
 import { navLinks, site } from "../data/site";
 
 export default function Navbar() {
@@ -36,14 +36,8 @@ export default function Navbar() {
     >
       <div className="h-[3px] bg-gradient-to-l from-navy-900 via-gold-500 to-navy-900" />
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-navy-900 text-gold-400 shadow-card">
-            <BookOpen size={20} />
-          </span>
-          <span className="leading-tight">
-            <span className="block text-lg font-bold text-navy-900">{site.name}</span>
-            <span className="block text-[10px] tracking-[0.3em] text-faint">{site.latinName}</span>
-          </span>
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
+          <img src="/images/logo.png" alt={`${site.name} | ${site.latinName}`} className="h-9 w-auto sm:h-10" />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="ناوبری اصلی">

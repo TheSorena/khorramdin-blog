@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Clock, Mail, Send } from "lucide-react";
+import { Clock, Mail, Send } from "lucide-react";
 import { contact, navLinks, site } from "../data/site";
 
 export default function Footer() {
@@ -8,15 +8,7 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-l from-transparent via-gold-500 to-transparent" />
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gold-400/15 text-gold-400 ring-1 ring-gold-400/30">
-              <BookOpen size={20} />
-            </span>
-            <span className="leading-tight">
-              <span className="block text-lg font-bold text-paper">{site.name}</span>
-              <span className="block text-[10px] tracking-[0.3em] text-gold-400">{site.latinName}</span>
-            </span>
-          </div>
+          <img src="/images/logo-light.png" alt={`${site.name} | ${site.latinName}`} className="h-10 w-auto" />
           <p className="mt-4 text-sm leading-7 text-paper/55">
             {site.tagline}؛ معرفی و عرضه کتاب‌های ارزشمند در ادبیات، تاریخ، روان‌شناسی و توسعه فردی.
           </p>

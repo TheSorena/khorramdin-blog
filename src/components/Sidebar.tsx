@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Archive, BookOpen, Clock, Mail, Search, Send, Tags } from "lucide-react";
+import { Archive, Clock, Mail, Search, Send, Tags } from "lucide-react";
 import { allTags, archiveMonths, posts } from "../data/posts";
 import { contact, site } from "../data/site";
 
@@ -28,11 +28,7 @@ export default function Sidebar() {
       <section className="relative overflow-hidden rounded-xl bg-gradient-to-b from-navy-800 to-navy-950 p-6 text-center shadow-card">
         <div className="hero-grid pointer-events-none absolute inset-0 opacity-40" />
         <div className="relative">
-          <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-gold-400/15 text-gold-400 ring-1 ring-gold-400/30">
-            <BookOpen size={24} />
-          </span>
-          <p className="mt-3 text-lg font-bold text-paper">{site.name}</p>
-          <p className="mt-1 text-[10px] tracking-[0.3em] text-gold-400">{site.latinName}</p>
+          <img src="/images/logo-light.png" alt={`${site.name} | ${site.latinName}`} className="mx-auto h-14 w-auto" />
           <p className="mt-3 text-xs leading-6 text-paper/60">{site.tagline}</p>
         </div>
       </section>

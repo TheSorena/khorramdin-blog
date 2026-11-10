@@ -50,6 +50,7 @@ npm run preview
 - کتاب‌های یادداشت محصولات (عنوان، نویسنده، دسته، توضیح، جلد): `src/data/books.ts`
 - اطلاعات تماس و ساعات کاری (فعلاً نمونه): `src/data/site.ts`
 - تصاویر جلدها و بنر: `public/images/`
+- لوگوها: `public/images/logo.png` (سطح روشن)، `logo-light.png` (سطح تیره)، `emblem.png` (نشان/فاوآیکون)؛ فایل اصلی لوگو در `src/`
 - فونت پینار (وزن‌های Regular/Medium/Bold به‌صورت woff2): `public/fonts/`
 
 همهٔ جلدها عکس واقعی کتاب‌ها هستند (`public/images/books/`)؛ جلد «شازده کوچولو» از Open Library تهیه شده است.
