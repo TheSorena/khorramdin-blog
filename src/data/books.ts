@@ -25,7 +25,7 @@ export const books: Book[] = [
     author: "جیمز کلیر",
     category: "توسعه فردی",
     price: "۳۲۰٬۰۰۰ تومان",
-    cover: "/images/books/atomic-habits.png",
+    cover: "/images/books/atomic-habits.jpg",
     description:
       "کتابی کاربردی درباره ساخت عادت‌های مثبت و کنار گذاشتن رفتارهای مخرب و تأثیر تغییرات کوچک و مستمر در زندگی.",
   },
@@ -35,7 +35,7 @@ export const books: Book[] = [
     author: "یووال نوح هراری",
     category: "تاریخ و علوم انسانی",
     price: "۳۵۰٬۰۰۰ تومان",
-    cover: "/images/books/sapiens.png",
+    cover: "/images/books/sapiens.jpg",
     description:
       "مروری بر تاریخ بشر از پیدایش انسان خردمند تا شکل‌گیری تمدن‌های امروزی و تحولات اجتماعی و فرهنگی.",
   },
@@ -45,7 +45,7 @@ export const books: Book[] = [
     author: "جورج اورول",
     category: "رمان و ادبیات کلاسیک",
     price: "۲۸۰٬۰۰۰ تومان",
-    cover: "/images/books/1984.png",
+    cover: "/images/books/1984.jpg",
     description:
       "رمانی تأمل‌برانگیز درباره جامعه‌ای خیالی که حکومت بر زندگی مردم نظارت دارد؛ اثری درباره آزادی، حقیقت و قدرت.",
   },

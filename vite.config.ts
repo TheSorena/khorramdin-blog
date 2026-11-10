@@ -4,4 +4,18 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("react-router") || id.includes("@remix-run")) return "router";
+            if (id.includes("react-dom")) return "react-dom";
+            if (id.includes("scheduler") || id.includes("/react/")) return "react";
+            return "vendor";
+          }
+        },
+      },
+    },
+  },
 });
