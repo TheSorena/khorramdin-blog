@@ -1,3 +1,4 @@
+import { Quote } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import { usePageTitle } from "../hooks/usePageTitle";
 
@@ -14,13 +15,16 @@ export default function About() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <PageHeader title="درباره خرمدین" subtitle="معرفی، ترجمه و عرضه کتاب‌های ارزشمند" />
-      <div className="mx-auto max-w-3xl space-y-6 rounded-2xl border border-gold/10 bg-navy-800 p-8 leading-8 text-cream/85 sm:p-10">
-        {paragraphs.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
-        <p className="border-t border-gold/15 pt-6 text-center text-lg font-extrabold text-gold">
-          خرمدین؛ دریچه‌ای به دنیای کتاب و اندیشه.
-        </p>
+      <div className="relative mx-auto max-w-3xl overflow-hidden rounded-2xl border border-line bg-paper p-8 shadow-card sm:p-10">
+        <Quote size={64} className="absolute -left-2 -top-2 text-gold-400/10" aria-hidden />
+        <div className="relative space-y-6 text-[15px] leading-9 text-ink-soft">
+          {paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+          <p className="border-t border-line-soft pt-6 text-center text-lg font-bold text-navy-900">
+            خرمدین؛ <span className="text-gold-600">دریچه‌ای به دنیای کتاب و اندیشه.</span>
+          </p>
+        </div>
       </div>
     </div>
   );

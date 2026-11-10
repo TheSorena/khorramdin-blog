@@ -29,20 +29,25 @@ export default function Archive() {
 
   return (
     <BlogLayout>
-      <div className="rounded-xl border border-gold/10 bg-navy-800 p-6">
-        <h1 className="text-2xl font-black text-cream">{heading}</h1>
-        <p className="mt-2 text-xs text-cream/55">{toFa(filtered.length)} مطلب</p>
+      <div className="rounded-xl border border-line bg-paper p-6 shadow-card">
+        <h1 className="flex items-center gap-2 text-2xl font-bold text-navy-900">
+          <span className="h-6 w-1 rounded-full bg-gold-500" />
+          {heading}
+        </h1>
+        <p className="mt-2 pr-3 text-xs text-muted">{toFa(filtered.length)} مطلب</p>
         {(query || tag || month) && (
-          <Link to="/posts" className="mt-3 inline-block text-xs font-bold text-gold transition-colors hover:text-gold-300">
+          <Link to="/posts" className="mt-3 inline-block pr-3 text-xs font-bold text-gold-600 transition-colors hover:text-navy-900">
             پاک کردن فیلترها ←
           </Link>
         )}
       </div>
 
       {filtered.length === 0 ? (
-        <div className="flex flex-col items-center gap-3 rounded-xl border border-gold/10 bg-navy-800 p-10 text-center">
-          <SearchX size={32} className="text-gold/60" />
-          <p className="text-sm text-cream/70">مطلبی مطابق جستجوی شما یافت نشد.</p>
+        <div className="flex flex-col items-center gap-3 rounded-xl border border-line bg-paper p-10 text-center shadow-card">
+          <span className="flex h-14 w-14 items-center justify-center rounded-full bg-paper-2 text-faint">
+            <SearchX size={28} />
+          </span>
+          <p className="text-sm text-muted">مطلبی مطابق جستجوی شما یافت نشد.</p>
         </div>
       ) : (
         filtered.map((post) => <PostCard key={post.slug} post={post} />)
